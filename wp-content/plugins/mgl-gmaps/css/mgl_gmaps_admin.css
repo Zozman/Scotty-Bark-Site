@@ -1,0 +1,149 @@
+.wrap { overflow:hidden; }
+.col_left { float: left; width:70%; }
+.col_right { float: right; width:25%; min-width: 300px; }
+
+.icon32 { background:url('../images/mageeklab.png') no-repeat; }
+
+.mgl_bg {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+#mgl_gmaps_modal {
+
+	min-height: 300px;
+	position: absolute;
+	left: 30px;
+	top:60px;
+	right: 30px;
+	bottom: 30px;
+	background-color: #fff;
+}
+
+#mgl_gmaps_modal ul li { 
+	float:left;
+}
+
+
+
+#mgl_map_generator_menu {list-style: none;overflow: none;margin-bottom:20px;border-bottom:1px solid #ddd;height: 20px;padding:0 0 0 20px; box-shadow:0 2px 2px #ddd;}
+#mgl_map_generator_menu li {float:left;border-left:1px solid #ddd;}
+#mgl_map_generator_menu li:first-child {border-left:none;}
+#mgl_map_generator_menu li:first-child a {padding-left:0;}
+#mgl_map_generator_menu li a {display: block;padding: 3px 10px;text-decoration: none;}
+#mgl_map_generator_menu li a.menu_active {color:#333;}
+
+#mgl_gmaps_modal .media-menu .mageeklab_brand { background: url('../images/mageeklab.png') no-repeat 5px top; height: 34px; padding-left: 45px; line-height: 2.2; font-weight: bold; font-size: 16px; text-transform: uppercase; display: block; padding-top: -16px; margin-top: -10px; }
+#mgl_gmaps_modal .media-menu .sideContent {
+	bottom: 0;
+    overflow: auto;
+    position: absolute;
+    top: 90px;
+}
+
+#mgl_gmaps_modal .media-frame-router { padding: 0 16px; }
+
+#mgl_gmaps_modal .close { position: absolute; top: 20px; right: 20px; }
+#mgl_gmaps_modal h3 { text-align: center; color: #333; }
+
+
+#mgl_gmaps_modal .mgl_map {
+	background-color: #ccc;
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+
+#mgl_gmaps_modal #mgl_map_settings, #mgl_gmaps_modal #markersForm {
+	padding:4px 20px;
+}
+
+/* Markers */
+
+#mgl_gmaps_modal .marker_icon_selector {
+	float:left;
+}
+
+#mgl_gmaps_modal .marker_title {
+	display: block;
+    font-size: 16px;
+    padding: 10px 0 0 5px;
+    float: left;
+}
+
+#mgl_gmaps_modal input[type="text"], #mgl_gmaps_modal textarea, #mgl_gmaps_modal select {
+	width: 100%;
+}
+
+.markers_skins a { float: left; margin: 0 3px 3px 0; height:42px; }
+.markers_skins a img { width: 32px; }
+
+.marker_skin_container { position: relative; }
+.marker_skin_container .markers_skins { background-color: #fff; width: 105px; padding: 6px; border: 1px solid #ccc; border-radius: 5px; top:50px; left: -6px; position: absolute; z-index: 1; }
+.marker_skin_container .markers_skins:before { 
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #ccc;
+	content: " ";
+	position: absolute;
+	top: -8px;
+	left: 8px;
+}
+.marker_skin_container .markers_skins:after { 
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	content: " ";
+	position: absolute;
+	top: -7px;
+	left: 8px;
+}
+.marker_skin_container .marker_skin img { width:32px; }
+
+#markers_skins { display: none; }
+
+#markersForm { text-align: center; }
+#markersForm #addNewFormMarker { margin-bottom: 20px; display: block; position: relative; width: 158px; }
+#markersForm .markerForm { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative; text-align: left; }
+#markersForm .markerForm .delete_marker { position: absolute; top: 0; right: 0; color: #ccc; text-decoration: none; font-weight: bold; }
+
+/* WIDGETS */
+
+.mgl_text_center { text-align: center; display: block; margin:10px 0; }
+
+.mgl_widget_generator {
+	background-color: #BD3A22;
+    background: url('../images/widget_icon.png') no-repeat 10px 5px, linear-gradient(to bottom, #dd482c, #BD3A22);
+    border-color: #8f2b18 #8f2b18 #6a1d0f;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-sizing: border-box;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.mgl_widget_generator:hover {
+	background: url('../images/widget_icon.png') no-repeat 10px 5px, linear-gradient(to bottom, #BD3A22, #952b18);
+	color:#fff;
+}

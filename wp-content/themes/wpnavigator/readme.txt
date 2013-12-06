@@ -1,0 +1,1 @@
+Online help file available at http://themolitor.com/help/wpnavigator
